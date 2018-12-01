@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Post Detail{% endblock %}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>作者：{{ post.author.username }}</p>
+    <span style="margin-left: 20px;">发布时间为{{ post.publish_time }}</span>
+    <h3>{{ post.body }}</h3>
+{% endblock %}
+
